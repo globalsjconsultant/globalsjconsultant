@@ -1,4 +1,6 @@
-# example/views.py
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.contrib.auth.models import User, auth
 from datetime import datetime
 
 from django.http import HttpResponse
@@ -13,4 +15,4 @@ def index(request):
         </body>
     </html>
     '''
-    return HttpResponse(html)
+    return render(request, 'index.html')
