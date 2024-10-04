@@ -84,16 +84,16 @@ WSGI_APPLICATION = 'api.wsgi.app'
 # Note: Django modules for using databases are not support in serverless
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
 
-DATABASES = {}
+"""DATABASES = {}"""
 
 
 DATABASES = {
     'default': {
         'ENGINE': env('DATABASE_ENGINE'),
-        'NAME': env('DATABASE_NAME'),
+        'NAME': env('POSTGRES_DATABASE'),
         'USER': env('POSTGRES_USER'),
         'PASSWORD': env('POSTGRES_PASSWORD'),
-        'POSTGRES_HOST': env('localhost'),
+        'POSTGRES_HOST': env('POSTGRES_HOST'),
         'PORT': '5432',
     }
 }
