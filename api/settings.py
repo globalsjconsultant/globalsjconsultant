@@ -37,6 +37,10 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 # Application definition
 
 INSTALLED_APPS = [
+    # dj admin interface
+    "unfold",  # before django.contrib.admin
+    "unfold.contrib.filters",  # optional
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example'
+
+
 ]
 
 MIDDLEWARE = [
@@ -90,22 +96,6 @@ DATABASES = {
         ssl_require=True   # Enforce SSL connection to Vercel PostgreSQL
     )
 }
-
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('POSTGRES_DATABASE'),
-        'USER': config('POSTGRES_USER'),
-        'PASSWORD': config('POSTGRES_PASSWORD'),
-        'POSTGRES_HOST': config('POSTGRES_HOST'),
-        'PORT': '5432',
-    }
-}
-
-
-
-DATABASES = {}
-"""
 
 
 # Password validation
