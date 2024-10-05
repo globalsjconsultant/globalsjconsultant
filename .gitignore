@@ -6,7 +6,7 @@ db.sqlite3
 media
 
 # Environments
-# !staticfiles/
+!staticfiles/
 
 .env 
 .venv 
