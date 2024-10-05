@@ -7,6 +7,11 @@
     {
       "src": "/(.*)",
       "dest": "api/wsgi.py"
+    },
+    {
+      "scripts": {
+        "build": "python manage.py collectstatic --noinput"
+      }
     }
   ]
 }
