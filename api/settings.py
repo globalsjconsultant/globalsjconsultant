@@ -38,9 +38,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 INSTALLED_APPS = [
     # dj admin interface
-    "unfold",  # before django.contrib.admin
-    "unfold.contrib.filters",  # optional
-
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
