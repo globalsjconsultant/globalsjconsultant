@@ -456,7 +456,7 @@
                             <div class="shape-image-2 fadeInRight animated" data-animation="fadeInRight" data-delay="2.3s">
                                 <img src="{% static 'img/hero/right-shape.png' %}" alt="shape-img">
                             </div>
-                            <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-1.jpg');"></div>
+                            <div class="hero-image bg-cover" style="background-image: url({% static 'img/hero/hero-1.jpg' %});"></div>
                             <div class="container">
                                 <div class="row g-4">
                                     <div class="col-lg-8">
@@ -483,7 +483,7 @@
                             <div class="shape-image-2 fadeInRight animated" data-animation="fadeInRight" data-delay="2.3s">
                                 <img src="{% static 'img/hero/right-shape.png' %}" alt="shape-img">
                             </div>
-                            <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-2.jpg');"></div>
+                            <div class="hero-image bg-cover" style="background-image: url({% static 'img/hero/hero-2.jpg' %});"></div>
                             <div class="container">
                                 <div class="row g-4">
                                     <div class="col-lg-8">
@@ -510,7 +510,7 @@
                             <div class="shape-image-2 fadeInRight animated" data-animation="fadeInRight" data-delay="2.3s">
                                 <img src="{% static 'img/hero/right-shape.png' %}" alt="shape-img">
                             </div>
-                            <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-3.jpg');"></div>
+                            <div class="hero-image bg-cover" style="background-image: url({% static 'img/hero/hero-3.jpg' %});"></div>
                             <div class="container">
                                 <div class="row g-4">
                                     <div class="col-lg-8">
@@ -537,7 +537,7 @@
                             <div class="shape-image-2 fadeInRight animated" data-animation="fadeInRight" data-delay="2.3s">
                                 <img src="{% static 'img/hero/right-shape.png' %}" alt="shape-img">
                             </div>
-                            <div class="hero-image bg-cover" style="background-image: url('assets/img/hero/hero-2.jpg');"></div>
+                            <div class="hero-image bg-cover" style="background-image: url({% static 'img/hero/hero-2.jpg' %});"></div>
                             <div class="container">
                                 <div class="row g-4">
                                     <div class="col-lg-8">
@@ -571,7 +571,8 @@
                                     <div class="border-shape">
                                         <img src="{% static 'img/about/border-shape.png' %}" alt="shape-img">
                                     </div>
-                                    <div class="about-image bg-cover wow fadeInLeft" data-wow-delay=".3s" style="background-image: url('assets/img/about/about.jpg');">
+                                    <div class="about-image bg-cover wow fadeInLeft" data-wow-delay=".3s"
+                                         style="background-image: url({% static 'img/about/about.jpg' %}");>
                                         <div class="about-image-2 wow fadeInUp" data-wow-delay=".5s">
                                             <img src="{% static 'img/about/about-2.jpg' %}" alt="about-img">
                                         </div>
@@ -843,7 +844,7 @@
             </section>
 
             <!--<< Cta Banner Section Start >>-->
-            <div class="cta-banner-section bg-cover section-padding" style="background-image: url('assets/img/banner/01.jpg');">
+            <div class="cta-banner-section bg-cover section-padding" style="background-image: url({% static 'img/banner/01.jpg' %});">
                 <div class="container">
                     <div class="cta-banner-wrapper section-padding pt-0">
                         <div class="video-box">
@@ -1072,7 +1073,8 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-5">
-                                            <div class="choose-image-2 bg-cover wow fadeInUp" data-wow-delay=".3s" style="background-image: url('assets/img/choose-us/02.jpg');"></div>
+                                            <div class="choose-image-2 bg-cover wow fadeInUp" data-wow-delay=".3s"
+                                                 style="background-image: url({% static 'img/choose-us/02.jpg' %});"></div>
                                             <div class="choose-image-3 wow fadeInUp" data-wow-delay=".5s">
                                                 <img src="{% static 'img/choose-us/03.jpg' %}" alt="img">
                                             </div>
@@ -1167,7 +1169,7 @@
                     <div class="testimonial-carousel-active">
                         <div class="testimonial-card-items">
                             <div class="author-items">
-                                <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/01.png');"></div>
+                                <div class="author-image bg-cover" style="background-image: url({% static 'img/testimonial/01.png' %});"></div>
                                 <div class="author-content">
                                     <h5>Kawser Ahmed</h5>
                                     <span>Web Developer</span>
@@ -1187,7 +1189,7 @@
                         </div>
                         <div class="testimonial-card-items">
                             <div class="author-items">
-                                <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/03.png');"></div>
+                                <div class="author-image bg-cover" style="background-image: url({% static 'img/testimonial/03.png' %});"></div>
                                 <div class="author-content">
                                     <h5>Jhon Dev</h5>
                                     <span>UI Designer</span>
@@ -1207,7 +1209,7 @@
                         </div>
                         <div class="testimonial-card-items">
                             <div class="author-items">
-                                <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/02.png');"></div>
+                                <div class="author-image bg-cover" style="background-image: url({% static 'img/testimonial/02.png' %});"></div>
                                 <div class="author-content">
                                     <h5>Salman Ahmed</h5>
                                     <span>WordPress Developer</span>
@@ -1225,7 +1227,7 @@
                         </div>
                         <div class="testimonial-card-items">
                             <div class="author-items">
-                                <div class="author-image bg-cover" style="background-image: url('assets/img/testimonial/01.png');"></div>
+                                <div class="author-image bg-cover" style="background-image: url({% static 'img/testimonial/01.png' %});"></div>
                                 <div class="author-content">
                                     <h5>Shikon Islam</h5>
                                     <span>Frontend Engineer</span>
@@ -1359,7 +1361,7 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-left">
-                                    <div class="contact-bg bg-cover" style="background-image: url('assets/img/contact/01.jpg');"></div>
+                                    <div class="contact-bg bg-cover" style="background-image: url({% static 'img/contact/01.jpg' %});"></div>
                                     <div class="contact-shape" style="background-image: url(assets/img/contact/bg-shape.png);"></div>
                                     <div class="section-title">
                                         <span class="text-white">Contact us</span>
