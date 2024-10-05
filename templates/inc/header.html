@@ -1,0 +1,428 @@
+{% load static %}
+
+<!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="modinatheme">
+        <meta name="description" content="Immigration and Visa Consulting Html Template">
+        <!-- ======== Page title ============ -->
+        <title>Visaland - Immigration & Visa Consulting HTML Template</title>
+        <!--<< Favcion >>-->
+        <link rel="shortcut icon" href="{% static 'img/favicon.svg' %}">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+        <!--<< Slick.css >>-->
+        <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+        <!--<< Swiper Slider.css >>-->
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <!--<< Style.css >>-->
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+
+    <body>
+
+        <!-- Back To Top Start -->
+        <div class="scroll-up">
+            <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="V" class="letters-loading">
+                        V
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<< Mouse Cursor Start >>-->
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="/">
+                                    <img src="{% static 'img/logo/logo.svg' %}" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                         <a href="mailto:info@example.com"><span class="mailto:info@azent.com">info@example.com</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+11002345909">+11002345909</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header-button mt-4">
+                                <a href="{% url 'example:contact' %}" class="theme-btn text-center">
+                                    <span>Contact Us<i class="fas fa-chevron-right"></i></span>
+                                </a>
+                            </div>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Top Start -->
+        <div class="header-top-section fix">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <ul class="contact-list">
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:info@example.com" class="link">info@example.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            55 Main Street, 2nd block, Malborne ,Australia
+                        </li>
+                    </ul>
+                    <div class="top-right">
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                        <ul class="header-menu">
+                            <li>
+                                <a href="{% url 'example:contact' %}">
+                                    Help
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'example:contact' %}">
+                                    Support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'example:faq' %}">
+                                Faqs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        <header class="header-section-1">
+            <div id="header-sticky" class="header-1">
+                <div class="container-fluid">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <div class="header-left">
+                                <div class="logo">
+                                    <a href="/" class="header-logo">
+                                        <img src="{% static 'img/logo/logo.svg' %}" alt="logo-img">
+                                    </a>
+                                </div>
+                                <div class="mean__menu-wrapper">
+                                    <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li class="has-dropdown active menu-thumb">
+                                                    <a href="/">
+                                                    Home
+                                                    <i class="fas fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="submenu has-home-menu">
+                                                        <li class="border-none">
+                                                            <div class="row g-4">
+                                                                <div class="col-lg-3 home-menu">
+                                                                    <div class="home-menu-thumb">
+                                                                        <img src="{% static 'img/header/home-1.jpg' %}" alt="img">
+                                                                        <div class="demo-button">
+                                                                            <a href="/" class="theme-btn">
+                                                                                <span>Multi Page</span>
+                                                                            </a>
+                                                                            <a href="index-one-page.html" class="theme-btn">
+                                                                                <span>One Page</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-menu-content text-center">
+                                                                        <h4 class="home-menu-title">
+                                                                            Home 01
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3  home-menu">
+                                                                    <div class="home-menu-thumb mb-15">
+                                                                        <img src="{% static 'img/header/home-2.jpg' %}" alt="img">
+                                                                        <div class="demo-button">
+                                                                            <a href="index-2.html" class="theme-btn">
+                                                                                <span>Multi Page</span>
+                                                                            </a>
+                                                                            <a href="index-two-page.html" class="theme-btn">
+                                                                                <span>One Page</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-menu-content text-center">
+                                                                        <h4 class="home-menu-title">
+                                                                            Home 02
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 home-menu">
+                                                                    <div class="home-menu-thumb mb-15">
+                                                                        <img src="{% static 'img/header/home-3.jpg' %}" alt="img">
+                                                                        <div class="demo-button">
+                                                                            <a href="index-3.html" class="theme-btn">
+                                                                                <span>Multi Page</span>
+                                                                            </a>
+                                                                            <a href="index-three-page.html" class="theme-btn">
+                                                                                <span>One Page</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-menu-content text-center">
+                                                                        <h4 class="home-menu-title">
+                                                                            Home 03
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 home-menu">
+                                                                    <div class="home-menu-thumb mb-15">
+                                                                        <img src="{% static 'img/header/home-4.jpg' %}" alt="img">
+                                                                        <div class="demo-button">
+                                                                            <a href="index-4.html" class="theme-btn">
+                                                                                <span>Multi Page</span>
+                                                                            </a>
+                                                                            <a href="index-four-page.html" class="theme-btn">
+                                                                                <span>One Page</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="home-menu-content text-center">
+                                                                        <h4 class="home-menu-title">
+                                                                            Home 04
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-dropdown active d-lg-none">
+                                                    <a href="{% url 'example:team' %}" class="border-none">
+                                                    Home
+                                                    <i class="fas fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li><a href="/">Home 01</a></li>
+                                                        <li><a href="index-2.html">Home 02</a></li>
+                                                        <li><a href="index-3.html">Home 03</a></li>
+                                                        <li><a href="index-4.html">Home 04</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="{% url 'example:about' %}">About</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% url 'example:service' %}">Visa <i class="fas fa-angle-down"></i>
+                                                  </a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'example:service' %}">Visa</a></li>
+                                                        <li><a href="{% url 'example:service_detail' %}">Visa Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-dropdown">
+                                                    <a href="{% url 'example:blog' %}">
+                                                        Pages
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li class="has-dropdown">
+                                                            <a href="{% url 'example:coaching_detail' %}">
+                                                                Coaching
+                                                            <i class="fas fa-angle-down"></i>
+                                                            </a>
+                                                            <ul class="submenu">
+                                                                 <li><a href="{% url 'example:coaching' %}">Coaching </a></li>
+                                                                 <li><a href="{% url 'example:coaching_detail' %}">Coaching Details</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-dropdown">
+                                                            <a href="{% url 'example:country_detail' %}">
+                                                                Countries
+                                                            <i class="fas fa-angle-down"></i>
+                                                            </a>
+                                                            <ul class="submenu">
+                                                                 <li><a href="{% url 'example:country' %}">Countries </a></li>
+                                                                 <li><a href="{% url 'example:country_detail' %}">Country Details</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-dropdown">
+                                                            <a href="{% url 'example:team' %}">
+                                                            Team
+                                                            <i class="fas fa-angle-down"></i>
+                                                            </a>
+                                                            <ul class="submenu">
+                                                                <li><a href="{% url 'example:team' %}">Team</a></li>
+                                                                <li><a href="{% url 'example:team_detail' %}">Team Details</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="{% url 'example:faq' %}">Faq's</a></li>
+                                                        <li><a href="{% url 'example:404' %}">404 Page</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="{% url 'example:blog' %}">
+                                                        Blog
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li><a href="news-grid.html">Blog Grid</a></li>
+                                                        <li><a href="{% url 'example:blog' %}">Blog Standard </a></li>
+                                                        <li><a href="{% url 'example:blog_detail' %}">Blog Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="{% url 'example:contact' %}">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <img src="{% static 'img/call.png' %}" alt="img">
+                                    </div>
+                                    <div class="content">
+                                        <p>Phone:</p>
+                                        <h6>
+                                            <a href="tel:+23645689622">+236 (456) 896 22</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="header-button">
+                                    <a href="{% url 'example:contact' %}" class="link-btn">
+                                        <span>Get A Quote</span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                                <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+                                <div class="header__hamburger d-lg-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="far fa-bars"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
