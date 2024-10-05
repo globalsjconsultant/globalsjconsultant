@@ -13,7 +13,7 @@ import os
 # import psycopg2
 from pathlib import Path
 import dj_database_url
-from decouple import config
+from decouple import config, Csv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,7 +31,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['globalsjconsultant.com', '*', '127.0.0.1', '.vercel.app', 'www.globalsjconsultant.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1').split(',')
 
 
 
