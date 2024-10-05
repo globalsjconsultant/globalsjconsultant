@@ -11,7 +11,7 @@
                     <h1 class="wow fadeInUp" data-wow-delay=".3s">Visa Details</h1>
                     <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
-                            <a href="index.html">
+                            <a href="/">
                             Home Page
                             </a>
                         </li>
@@ -35,12 +35,12 @@
                             <div class="visa-sidebar">
                                 <div class="visa-widget-categories">
                                     <ul>
-                                        <li><a href="service-details.html">Student Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
-                                        <li><a href="service-details.html">Family Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
-                                        <li><a href="service-details.html">Tourist Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
-                                        <li><a href="service-details.html">Business Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
-                                        <li><a href="service-details.html">Worker Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
-                                        <li><a href="service-details.html">Diplomatic Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
+                                        <li><a href="{% url 'example:service_detail' %}">Student Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
+                                        <li><a href="{% url 'example:service_detail' %}">Family Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
+                                        <li><a href="{% url 'example:service_detail' %}">Tourist Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
+                                        <li><a href="{% url 'example:service_detail' %}">Business Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
+                                        <li><a href="{% url 'example:service_detail' %}">Worker Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
+                                        <li><a href="{% url 'example:service_detail' %}">Diplomatic Visa<span><i class="fas fa-chevron-right"></i></span></a></li>
                                     </ul>
                                 </div>
                                 <div class="visa-sidebar-widget">
@@ -48,7 +48,7 @@
                                         <h4>Do You Have any <br> question?</h4>
                                         <h3><a href="tel:808555-0111">(808) 555-0111</a></h3>
                                         <p>It is a long established fact that a reader will be distracted by the rea</p>
-                                        <a href="contact.html" class="theme-btn bg-white">
+                                        <a href="{% url 'example:contact' %}" class="theme-btn bg-white">
                                             <span>
                                                 contact us
                                                 <i class="fas fa-chevron-right"></i>
@@ -56,7 +56,7 @@
                                          </a>
                                     </div>
                                 </div>
-                                <a href="service-details.html" class="theme-btn w-100 text-center">
+                                <a href="{% url 'example:service_detail' %}" class="theme-btn w-100 text-center">
                                     <span><i class="fas fa-file-pdf me-3"></i> download pdf file</span>
                                 </a>
                             </div>

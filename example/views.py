@@ -22,7 +22,7 @@ def about(request):
 def team(request):
     return render(request, 'team.html')
 def team_detail(request):
-    return render(request, 'team_detail.html')
+    return render(request, 'team-details.html')
 def notfound(request):
     return render(request, 'notfound.html')
 def faq(request):
@@ -30,21 +30,21 @@ def faq(request):
 def service(request):
     return render(request, 'service.html')
 def service_detail(request):
-    return render(request, 'service_detail.html')
+    return render(request, 'service-details.html')
 
 def coaching(request):
     return render(request, 'coaching.html')
 def coaching_detail(request):
-    return render(request, 'coaching_detail.html')
+    return render(request, 'coaching-details.html')
 def country(request):
     return render(request, 'country.html')
 def country_detail(request):
-    return render(request, 'country_detail.html')
+    return render(request, 'country-details.html')
 
 def blog(request):
-    return render(request, 'blog.html')
+    return render(request, 'news.html')
 def blog_detail(request):
-    return render(request, 'blog_detail.html')
+    return render(request, 'news-details.html')
 
 def contact(request):
     return render(request, 'contact.html')

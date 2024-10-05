@@ -5,13 +5,13 @@
     {% include 'inc/header.html' %}
 
             <!--<< Breadcrumb Section Start >>-->
-            <div class="breadcrumb-wrapper section-padding bg-cover" style="background-image: url('assets/img/breadcrumb.jpg');">
+            <div class="breadcrumb-wrapper section-padding bg-cover" style="background-image: url({% static 'img/breadcrumb.jpg' %});">
                 <div class="container">
                     <div class="page-heading">
                         <h1 class="wow fadeInUp" data-wow-delay=".3s">team page</h1>
                         <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                             <li>
-                                <a href="index.html">
+                                <a href="/">
                                 Home Page
                                 </a>
                             </li>
@@ -33,7 +33,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/01.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/01.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Salman Ahmed</a>
+                                        <a href="{% url 'example:team_detail' %}">Salman Ahmed</a>
                                     </h5>
                                     <p>CEO & Founder</p>
                                 </div>
@@ -54,7 +54,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/02.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/02.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Sonsil Macron</a>
+                                        <a href="{% url 'example:team_detail' %}">Sonsil Macron</a>
                                     </h5>
                                     <p>CEO & Founder</p>
                                 </div>
@@ -75,7 +75,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/03.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/03.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Kawser Ahmed</a>
+                                        <a href="{% url 'example:team_detail' %}">Kawser Ahmed</a>
                                     </h5>
                                     <p>CEO & Founder</p>
                                 </div>
@@ -96,7 +96,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/04.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/04.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -108,7 +108,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Sara Albert</a>
+                                        <a href="{% url 'example:team_detail' %}">Sara Albert</a>
                                     </h5>
                                     <p>Consultant</p>
                                 </div>
@@ -117,7 +117,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/04.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/04.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -129,7 +129,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Sara Albert</a>
+                                        <a href="{% url 'example:team_detail' %}">Sara Albert</a>
                                     </h5>
                                     <p>Consultant</p>
                                 </div>
@@ -138,7 +138,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/03.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/03.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Kawser Ahmed</a>
+                                        <a href="{% url 'example:team_detail' %}">Kawser Ahmed</a>
                                     </h5>
                                     <p>CEO & Founder</p>
                                 </div>
@@ -159,7 +159,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/02.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/02.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -171,7 +171,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Sonsil Macron</a>
+                                        <a href="{% url 'example:team_detail' %}">Sonsil Macron</a>
                                     </h5>
                                     <p>CEO & Founder</p>
                                 </div>
@@ -180,7 +180,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                             <div class="single-team-items mt-0">
                                 <div class="team-image">
-                                    <img src="assets/img/team/01.jpg" alt="team-img">
+                                    <img src="{% static 'img/team/01.jpg' %}" alt="team-img">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="team-content text-center box-shadow">
                                     <h5>
-                                        <a href="team-details.html">Salman Ahmed</a>
+                                        <a href="{% url 'example:team_detail' %}">Salman Ahmed</a>
                                     </h5>
                                     <p>CEO & Founder</p>
                                 </div>

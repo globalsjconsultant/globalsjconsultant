@@ -87,7 +87,9 @@ WSGI_APPLICATION = 'api.wsgi.app'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 # Note: Django modules for using databases are not support in serverless
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
-
+"""
+DATABASES = {}
+"""
 DATABASES = {
     'default': dj_database_url.config(
         default=config('POSTGRES_URL'),
