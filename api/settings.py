@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 # import psycopg2
 from pathlib import Path
+import dj_database_url
 from decouple import config
 
 
@@ -82,19 +83,29 @@ WSGI_APPLICATION = 'api.wsgi.app'
 # Note: Django modules for using databases are not support in serverless
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
 
-DATABASES = {}
-
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('POSTGRES_URL'),
+        conn_max_age=600,  # You can adjust this as needed
+        ssl_require=True   # Enforce SSL connection to Vercel PostgreSQL
+    )
+}
 
 """DATABASES = {
     'default': {
-        'ENGINE': config('DATABASE_ENGINE'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': config('POSTGRES_DATABASE'),
         'USER': config('POSTGRES_USER'),
         'PASSWORD': config('POSTGRES_PASSWORD'),
         'POSTGRES_HOST': config('POSTGRES_HOST'),
-        'PORT': config('POSTGRES_PORT'),
+        'PORT': '5432',
     }
-}"""
+}
+
+
+
+DATABASES = {}
+"""
 
 
 # Password validation
