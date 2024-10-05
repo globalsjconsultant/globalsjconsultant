@@ -5,13 +5,13 @@
     {% include 'inc/header.html' %}
 
             <!--<< Breadcrumb Section Start >>-->
-            <div class="breadcrumb-wrapper section-padding bg-cover" style="background-image: url('assets/img/breadcrumb.jpg');">
+            <div class="breadcrumb-wrapper section-padding bg-cover" style="background-image: url({% static 'img/breadcrumb.jpg' %});">
                 <div class="container">
                     <div class="page-heading">
                         <h1 class="wow fadeInUp" data-wow-delay=".3s">Visa</h1>
                         <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                             <li>
-                                <a href="index.html">
+                                <a href="/">
                                 Home Page
                                 </a>
                             </li>
@@ -49,7 +49,7 @@
                             </div>
                             <div class="content">
                                 <h6>
-                                    <a href="service-details.html">
+                                    <a href="{% url 'example:service_detail' %}">
                                         Working Visa
                                     </a>
                                 </h6>
@@ -61,7 +61,7 @@
                             </div>
                             <div class="content">
                                 <h6>
-                                    <a href="service-details.html">
+                                    <a href="{% url 'example:service_detail' %}">
                                         Tourist Visa
                                     </a>
                                 </h6>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="content">
                                 <h6>
-                                    <a href="service-details.html">
+                                    <a href="{% url 'example:service_detail' %}">
                                         Medical Visa
                                     </a>
                                 </h6>
@@ -85,7 +85,7 @@
                             </div>
                             <div class="content">
                                 <h6>
-                                    <a href="service-details.html">
+                                    <a href="{% url 'example:service_detail' %}">
                                         Student Visa
                                     </a>
                                 </h6>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="content">
                                 <h6>
-                                    <a href="service-details.html">
+                                    <a href="{% url 'example:service_detail' %}">
                                         Family Visa
                                     </a>
                                 </h6>
@@ -107,7 +107,7 @@
                     <div class="service-text-area text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
                         <h5>
                             Bring them together and you overcome the ordinary.
-                            <a href="service.html" class="link-btn link-btn-2">
+                            <a href="{% url 'example:service' %}" class="link-btn link-btn-2">
                                 <span>View More Service</span>
                                 <i class="fal fa-plus"></i>
                             </a>
@@ -122,45 +122,45 @@
                     <div class="service-wrapper p-0">
                         <div class="row g-4">
                              <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                 <div class="service-card-items mt-0">
-                                     <h3><a href="service-details.html">Business Visa</a></h3>
+                                 <div class="service-card-items active mt-0">
+                                     <h3><a href="{% url 'example:service_detail' %}">Tourist Visa</a></h3>
                                      <p>
                                          Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum
                                      </p>
                                      <div class="service-thumb">
-                                         <img src="assets/img/service/01.jpg" alt="img">
+                                         <img src="{% static 'img/service/04.jpg' %}" alt="img">
                                      </div>
-                                     <a href="service-details.html" class="link-btn">
+                                     <a href="{% url 'example:service_detail' %}" class="link-btn">
                                          <span>read more</span>
                                          <i class="fas fa-chevron-right"></i>
                                      </a>
                                  </div>
                              </div>
-                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                  <div class="service-card-items mt-0">
-                                     <h3><a href="service-details.html">Student Visa</a></h3>
+                                     <h3><a href="{% url 'example:service_detail' %}">Student Visa</a></h3>
                                      <p>
                                          Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum
                                      </p>
                                      <div class="service-thumb">
-                                         <img src="assets/img/service/02.jpg" alt="img">
+                                         <img src="{% static 'img/service/02.jpg' %}" alt="img">
                                      </div>
-                                     <a href="service-details.html" class="link-btn">
+                                     <a href="{% url 'example:service_detail' %}" class="link-btn">
                                          <span>read more</span>
                                          <i class="fas fa-chevron-right"></i>
                                      </a>
                                  </div>
                              </div>
                              <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                                 <div class="service-card-items active mt-0">
-                                     <h3><a href="service-details.html">Work Visa</a></h3>
+                                 <div class="service-card-items mt-0">
+                                     <h3><a href="{% url 'example:service_detail' %}">Work Visa</a></h3>
                                      <p>
                                          Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum
                                      </p>
                                      <div class="service-thumb">
-                                         <img src="assets/img/service/03.jpg" alt="img">
+                                         <img src="{% static 'img/service/03.jpg' %}" alt="img">
                                      </div>
-                                     <a href="service-details.html" class="link-btn">
+                                     <a href="{% url 'example:service_detail' %}" class="link-btn">
                                          <span>read more</span>
                                          <i class="fas fa-chevron-right"></i>
                                      </a>
@@ -168,14 +168,14 @@
                              </div>
                              <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                  <div class="service-card-items mt-0">
-                                     <h3><a href="service-details.html">Touriest Visa</a></h3>
+                                     <h3><a href="{% url 'example:service_detail' %}">Settlement Visa</a></h3>
                                      <p>
                                          Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum
                                      </p>
                                      <div class="service-thumb">
-                                         <img src="assets/img/service/04.jpg" alt="img">
+                                         <img src="{% static 'img/service/01.jpg' %}" alt="img">
                                      </div>
-                                     <a href="service-details.html" class="link-btn">
+                                     <a href="{% url 'example:service_detail' %}" class="link-btn">
                                          <span>read more</span>
                                          <i class="fas fa-chevron-right"></i>
                                      </a>
@@ -183,14 +183,14 @@
                              </div>
                              <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                  <div class="service-card-items mt-0">
-                                     <h3><a href="service-details.html">Business Visa</a></h3>
+                                     <h3><a href="{% url 'example:service_detail' %}">Business Visa</a></h3>
                                      <p>
                                          Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum
                                      </p>
                                      <div class="service-thumb">
-                                         <img src="assets/img/service/01.jpg" alt="img">
+                                         <img src="{% static 'img/service/01.jpg' %}" alt="img">
                                      </div>
-                                     <a href="service-details.html" class="link-btn">
+                                     <a href="{% url 'example:service_detail' %}" class="link-btn">
                                          <span>read more</span>
                                          <i class="fas fa-chevron-right"></i>
                                      </a>
@@ -198,14 +198,14 @@
                              </div>
                              <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                                  <div class="service-card-items mt-0">
-                                     <h3><a href="service-details.html">Student Visa</a></h3>
+                                     <h3><a href="{% url 'example:service_detail' %}">Urgent Travel Document</a></h3>
                                      <p>
                                          Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum
                                      </p>
                                      <div class="service-thumb">
-                                         <img src="assets/img/service/02.jpg" alt="img">
+                                         <img src="{% static 'img/service/02.jpg' %}" alt="img">
                                      </div>
-                                     <a href="service-details.html" class="link-btn">
+                                     <a href="{% url 'example:service_detail' %}" class="link-btn">
                                          <span>read more</span>
                                          <i class="fas fa-chevron-right"></i>
                                      </a>
@@ -217,11 +217,11 @@
             </section>
     
             <!--<< Cta Contact Section Start >>--> 
-            <section class="cta-banner-contact-section fix section-padding bg-cover" style="background-image: url('assets/img/contact-bg.jpg');">
+            <section class="cta-banner-contact-section fix section-padding bg-cover" style="background-image: url({% static 'img/contact-bg.jpg' %});">
                 <div class="container">
                     <div class="cta-banner-concat-wrapper">
                         <h2 class="title-anim">We Counsel Students to Get <br> Study Visas</h2>
-                        <a href="contact.html" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">
+                        <a href="{% url 'example:contact' %}" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">
                             <span>
                                 Contact Us
                                 <i class="fas fa-chevron-right"></i>
@@ -242,18 +242,18 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="service-visa-items">
                                 <div class="service-visa-thumb">
-                                    <img src="assets/img/visa/01.jpg" alt="img">
-                                    <img src="assets/img/visa/01.jpg" alt="img">
-                                    <a href="service-details.html" class="image-overlay">
+                                    <img src="{% static 'img/visa/01.jpg' %}" alt="img">
+                                    <img src="{% static 'img/visa/01.jpg' %}" alt="img">
+                                    <a href="{% url 'example:service_detail' %}" class="image-overlay">
                                         <i class="fal fa-plus"></i>
                                     </a>
                                 </div>
                                 <div class="service-visa-content">
-                                    <h3><a href="service-details.html">Student Visa</a></h3>
+                                    <h3><a href="{% url 'example:service_detail' %}">Student Visa</a></h3>
                                     <p>
                                         Quis autem vel eum iure reprehenderit quin eaes voluptate velit esse quam
                                     </p>
-                                    <a href="service-details.html" class="link-btn">
+                                    <a href="{% url 'example:service_detail' %}" class="link-btn">
                                         <span>read more</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
@@ -263,18 +263,18 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                             <div class="service-visa-items">
                                 <div class="service-visa-thumb">
-                                    <img src="assets/img/visa/02.jpg" alt="img">
-                                    <img src="assets/img/visa/02.jpg" alt="img">
-                                    <a href="service-details.html" class="image-overlay">
+                                    <img src="{% static 'img/visa/02.jpg' %}" alt="img">
+                                    <img src="{% static 'img/visa/02.jpg' %}" alt="img">
+                                    <a href="{% url 'example:service_detail' %}" class="image-overlay">
                                         <i class="fal fa-plus"></i>
                                     </a>
                                 </div>
                                 <div class="service-visa-content">
-                                    <h3><a href="service-details.html">business Visa</a></h3>
+                                    <h3><a href="{% url 'example:service_detail' %}">business Visa</a></h3>
                                     <p>
                                         Quis autem vel eum iure reprehenderit quin eaes voluptate velit esse quam
                                     </p>
-                                    <a href="service-details.html" class="link-btn">
+                                    <a href="{% url 'example:service_detail' %}" class="link-btn">
                                         <span>read more</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
@@ -284,18 +284,18 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                             <div class="service-visa-items">
                                 <div class="service-visa-thumb">
-                                    <img src="assets/img/visa/03.jpg" alt="img">
-                                    <img src="assets/img/visa/03.jpg" alt="img">
-                                    <a href="service-details.html" class="image-overlay">
+                                    <img src="{% static 'img/visa/03.jpg' %}" alt="img">
+                                    <img src="{% static 'img/visa/03.jpg' %}" alt="img">
+                                    <a href="{% url 'example:service_detail' %}" class="image-overlay">
                                         <i class="fal fa-plus"></i>
                                     </a>
                                 </div>
                                 <div class="service-visa-content">
-                                    <h3><a href="service-details.html">Tourist Visa</a></h3>
+                                    <h3><a href="{% url 'example:service_detail' %}">Tourist Visa</a></h3>
                                     <p>
                                         Quis autem vel eum iure reprehenderit quin eaes voluptate velit esse quam
                                     </p>
-                                    <a href="service-details.html" class="link-btn">
+                                    <a href="{% url 'example:service_detail' %}" class="link-btn">
                                         <span>read more</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
@@ -313,8 +313,8 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-left">
-                                    <div class="contact-bg bg-cover" style="background-image: url('assets/img/contact/01.jpg');"></div>
-                                    <div class="contact-shape" style="background-image: url(assets/img/contact/bg-shape.png);"></div>
+                                    <div class="contact-bg bg-cover" style="background-image: url({% static 'img/contact/01.jpg' %});"></div>
+                                    <div class="contact-shape" style="background-image: url({% static 'img/contact/bg-shape.png' %});"></div>
                                     <div class="section-title">
                                         <span class="text-white wow fadeInUp">Contact us</span>
                                         <h2 class="text-white title-anim">Get a Call Back</h2>

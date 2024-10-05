@@ -5,6 +5,9 @@ from datetime import datetime
 
 from django.http import HttpResponse
 
+from .forms import ContactForm
+
+
 def index(request):
     now = datetime.now()
     html = f'''
@@ -47,4 +50,11 @@ def blog_detail(request):
     return render(request, 'news-details.html')
 
 def contact(request):
-    return render(request, 'contact.html')
+    form = ContactForm(request.POST or None)
+
+    if form.is_valid():
+        new_message = form.save(commit=False)
+        new_message.replied = False
+        new_message.save()
+        return redirect('example:index')
+    return render(request, 'contact.html', context={'form': form})
